@@ -14,9 +14,7 @@ Installations:
  - Helm Tiller(Server): [Easy In-Cluster Installation](https://helm.sh/docs/using_helm/#easy-in-cluster-installation)
 
 
-Developing Templates:
-
-[source](https://helm.sh/docs/chart_template_guide/) :
+Developing Templates: [template](https://helm.sh/docs/chart_template_guide/)
 
 CHARTS:
 
@@ -49,9 +47,9 @@ helm repo list
 
 `helm get manifest <manifest name>` actual template will be loaded
 
-helm list
+`helm list`
 
-helm delete <helm-deploy-name> --purge
+`helm delete <helm-deploy-name> --purge`
 
  
 

@@ -2,6 +2,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-configmap
+        {{- template  "mychart.labels" .}}
+        {{- template  "mychart.app" .}}
 data:
   myvalue: "Hello World"
   {{- if and .Values.favorite.drink (eq .Values.favorite.drink "coffee") }}
